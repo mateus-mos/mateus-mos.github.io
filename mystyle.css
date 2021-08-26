@@ -1,8 +1,24 @@
+@keyframes logoAnim {
+    from{
+        box-shadow: 1px 1px 50px yellow;
+    } 
+    to{
+        box-shadow: 1px 1px 100px yellow;
+    }
+}
 
+@keyframes hole {
+    from{
+        left: 50%;
+    } 
+    to{
+        left: 110%;
+    }
+}
 body{ 
     font-family: 'Press Start 2P',serif;; 
+    font-size: medium;
     text-align: justify;
-    
     color: white;
     /* animation-name: background;
     animation-duration: 5s;
@@ -19,6 +35,32 @@ p{
 #me_img{
     height: 400px;
     width: 400px;
+}
+#logo{
+    z-index: 1;
+
+    height: 140%;
+    width: 100%;
+    background-color: yellow;
+    position: absolute;
+
+    top: 20%;
+    left: -90%;
+
+    animation: logoAnim 2s infinite;
+    animation-direction: alternate;
+    box-shadow: 10px 10px 10px rgb(238, 255, 0);
+    border-radius: 50%;
+}
+#holes{
+    background-color:black;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 30%;
+    left: -5%;
+    border-radius: 50%;
+    animation: hole 30s infinite;
 }
 .center {
     display: block;
