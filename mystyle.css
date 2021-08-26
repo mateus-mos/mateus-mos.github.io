@@ -2,6 +2,7 @@
 body{ 
     font-family: 'Press Start 2P',serif;; 
     text-align: justify;
+    
     color: white;
     /* animation-name: background;
     animation-duration: 5s;
@@ -16,9 +17,8 @@ p{
     margin-right: 100px;
 }
 #me_img{
-    width: 10%;
-    height: 10%;
-    
+    height: 400px;
+    width: 400px;
 }
 .center {
     display: block;
