@@ -64,32 +64,6 @@ html {
     box-shadow: 1703px 1208px  , 381px 207px  , 1516px 1990px  , 1960px 982px  , 922px 1278px  , 689px 1766px  , 538px 554px  , 802px 1529px  , 871px 1805px  , 228px 1830px  , 353px 186px  , 1873px 1154px  , 494px 1244px  , 1415px 261px  , 1020px 1990px  , 1924px 1169px  , 1205px 464px  , 596px 830px  , 1319px 504px  , 953px 1850px  , 408px 1360px  , 569px 1704px  , 1367px 729px  , 807px 1845px  , 572px 825px  , 523px 1089px  , 1405px 1622px  , 1352px 423px  , 1247px 1758px  , 1117px 920px  , 983px 352px  , 175px 1351px  , 962px 260px  , 918px 1530px  , 1184px 935px  , 201px 473px  , 90px 1759px  , 211px 933px  , 1887px 171px  , 177px 101px  , 844px 346px  , 283px 1821px  , 1236px 1225px  , 173px 1875px  , 24px 1776px  , 277px 804px  , 1714px 715px  , 937px 1882px  , 1708px 1405px  , 173px 1847px  , 1902px 1160px  , 1725px 1270px  , 36px 18px  , 1612px 1467px  , 1390px 1733px  , 927px 1315px  , 1907px 1337px  , 1855px 1454px  , 1033px 1425px  , 1450px 1359px  , 1422px 771px  , 256px 343px  , 1581px 340px  , 1180px 247px  , 191px 882px  , 372px 1171px  , 1509px 937px  , 1018px 1829px  , 121px 152px  , 327px 767px  , 1438px 1421px  , 321px 905px  , 616px 245px  , 1957px 1520px  , 1811px 1924px  , 1454px 1778px  , 1507px 822px  , 649px 218px  , 362px 1567px  , 1637px 145px  , 115px 466px  , 345px 935px  , 112px 1019px  , 1440px 1910px  , 1280px 1367px  , 1505px 890px  , 788px 927px  , 753px 1273px  , 1924px 1714px  , 495px 1149px  , 267px 1851px  , 1293px 1431px  , 1159px 433px  , 1725px 1170px  , 1067px 296px  , 746px 463px  , 412px 349px  , 1193px 1421px  , 564px 455px  , 1675px 589px ;
   }
 
-  #planet{
-    z-index: -1;
-    height: 50px;
-    width: 50px;
-    background-image: url("");
-    position: relative;
-    border-radius: 50%;
-    animation: planet 10s infinite;
-  }
-
-  @keyframes planet {
-    /*
-    0%{background: radial-gradient(circle at 50px 100px, green, #000);}
-    25%{background: radial-gradient(circle at 60px 100px, red, #000);}
-    50%{background: radial-gradient(circle at 70px 100px, yellow, #000);}
-    75%{background: radial-gradient(circle at 80px 100px, brown, #000);}
-    100%{background: radial-gradient(circle at 90px 100px, green, #000);}
-    */
-    from {
-      transform: rotate3d(1,1,1,0deg);
-    }
-    to {
-      transform: rotate3d(1,1,1,360deg);
-    }
- 
-} 
   @keyframes animStar1 {
     /*
     0%{color: rgb(255, 0, 43);}

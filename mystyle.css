@@ -1,18 +1,24 @@
-@keyframes logoAnim {
+@keyframes SunAnim {
     from{
         box-shadow: 1px 1px 50px yellow;
     } 
     to{
+        /*transform: rotateZ(360deg); */
         box-shadow: 1px 1px 100px yellow;
     }
 }
 
-@keyframes hole {
-    from{
-        left: 50%;
+@keyframes planet{
+    0%{
+        z-index: 0;
+        transform: rotateY(0) translateZ(240px);
     } 
-    to{
-        left: 110%;
+    90%{
+        z-index: -1;
+    }
+    100%{
+        z-index: 0;
+        transform: rotateY(180deg) translateZ(240px);
     }
 }
 body{ 
@@ -32,35 +38,32 @@ p{
     margin-left: 100px;
     margin-right: 100px;
 }
-#me_img{
-    height: 400px;
-    width: 400px;
-}
-#logo{
-    z-index: 1;
 
-    height: 140%;
-    width: 100%;
-    background-color: yellow;
-    position: absolute;
+#sun{
 
-    top: 20%;
-    left: -90%;
+    z-index: auto;
+    height: 150px;
+    width: 150px;
+    background-image: radial-gradient(circle at 30px 40px, yellow, rgb(255, 123, 0));
+    position: relative; 
 
-    animation: logoAnim 2s infinite;
-    animation-direction: alternate;
+    top: 10px;
+    margin: auto;
+
+    animation: SunAnim 20s alternate infinite;
     box-shadow: 10px 10px 10px rgb(238, 255, 0);
     border-radius: 50%;
 }
-#holes{
-    background-color:black;
-    height: 50px;
-    width: 50px;
-    position: relative;
+#planet{
+    z-index: 0;
+    background-image: radial-gradient(circle at 30px 50px, yellow,black); 
+    height: 10px;
+    width: 10px;
+    position: inherit;
     top: 30%;
-    left: -5%;
+    left: -40%;
     border-radius: 50%;
-    animation: hole 30s infinite;
+    animation: planet 30s infinite;
 }
 .center {
     display: block;
